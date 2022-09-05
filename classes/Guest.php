@@ -12,11 +12,11 @@
             $this->name = "Guest";
         }
 
-        public function getGuestName(){
+        public function getUserName(){
             return $this->name;
         }
 
-        public function setGuestName($_name){
+        public function setUserName($_name){
             $this->name = $_name;
         }
     }
