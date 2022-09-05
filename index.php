@@ -1,6 +1,7 @@
 <?php 
     require_once __DIR__ . '/classes/Guest.php';
     require_once __DIR__ . '/classes/RegisteredUser.php';
+    require_once __DIR__ . '/classes/Card.php';
 ?>
 
 <!DOCTYPE html>
@@ -14,9 +15,12 @@
 <body>
 
     <?php 
-    
-        $guest = new Guest;
-        $pippo = new RegisteredUser("Pippo", "pippo@mail.it", "topolino");
+        
+        $card1 = new Card("1111222233334444", "Guest", 10, 24, "545");
+        $card2 = new Card("5555666677778888", "Pippo", 12, 26, "808");
+
+        $guest = new Guest($card1);
+        $pippo = new RegisteredUser("Pippo", "pippo@mail.it", "topolino", $card2);
 
         var_dump($guest);
         var_dump($pippo);
