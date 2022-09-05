@@ -1,5 +1,6 @@
 <?php 
     require_once __DIR__ . '/classes/Guest.php';
+    require_once __DIR__ . '/classes/RegisteredUser.php';
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +12,16 @@
     <title>PHP OOP 2</title>
 </head>
 <body>
+
+    <?php 
+    
+        $guest = new Guest;
+        $pippo = new RegisteredUser("Pippo", "pippo@mail.it", "topolino");
+
+        var_dump($guest);
+        var_dump($pippo);
+    
+    ?>
     
 </body>
 </html>
