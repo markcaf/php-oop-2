@@ -22,6 +22,17 @@
         var_dump($pippo);
     
     ?>
+
+    <h2><?php echo $guest->getUserName(); ?></h2>
+        <ul>
+            <li>No info</li>
+        </ul>
+
+    <h2><?php echo $pippo->getUserName(); ?></h2>
+        <ul>
+            <li><?php echo $pippo->getUserEmail(); ?></li>
+            <li><?php echo $pippo->getUserPassword(); ?></li>
+        </ul>
     
 </body>
 </html>
