@@ -11,11 +11,13 @@
          * @param [string] $_name
          * @param [string] $_email
          * @param [string] $_password
+         * @param [object] $_paymentCard
          */
-        function __construct($_name, $_email, $_password){
+        function __construct($_name, $_email, $_password, $_paymentCard){
             $this->name = $_name;
             $this->email = $_email;
             $this->password = $_password;
+            $this->paymentCard = $_paymentCard;
         }
 
         public function getUserEmail(){
