@@ -29,13 +29,56 @@
 
     <h2><?php echo $guest->getUserName(); ?></h2>
         <ul>
-            <li>No info</li>
+            <h4>Payment Card:</h4>
+            <li>
+                <strong>Number: </strong>
+                <?php echo $card1->getCardNumber(); ?>
+            </li>
+            <li>
+                <strong>Owner: </strong>
+                <?php echo $card1->getOwnerName(); ?>
+            </li>
+            <li>
+                <strong>Expiration month: </strong>
+                <?php echo $card1->getExpirationMonth(); ?>
+            </li>
+            <li>
+                <strong>Expiration year: </strong>
+                <?php echo $card1->getExpirationYear(); ?>
+            </li>
+            <li>
+                <strong>CVV: </strong>
+                <?php echo $card1->getCvv(); ?>
+            </li>
         </ul>
 
     <h2><?php echo $pippo->getUserName(); ?></h2>
         <ul>
-            <li><?php echo $pippo->getUserEmail(); ?></li>
-            <li><?php echo $pippo->getUserPassword(); ?></li>
+            <li>Email: <?php echo $pippo->getUserEmail(); ?></li>
+            <li>Password: <?php echo $pippo->getUserPassword(); ?></li>
+
+            <h4>Payment Card:</h4>
+            <li>
+                <strong>Number: </strong>
+                <?php echo $card2->getCardNumber(); ?>
+            </li>
+            <li>
+                <strong>Owner: </strong>
+                <?php echo $card2->getOwnerName(); ?>
+            </li>
+            <li>
+                <strong>Expiration month: </strong>
+                <?php echo $card2->getExpirationMonth(); ?>
+            </li>
+            <li>
+                <strong>Expiration year: </strong>
+                <?php echo $card2->getExpirationYear(); ?>
+            </li>
+            <li>
+                <strong>CVV: </strong>
+                <?php echo $card2->getCvv(); ?>
+            </li>
+
         </ul>
     
 </body>
