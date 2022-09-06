@@ -2,6 +2,7 @@
     require_once __DIR__ . '/classes/Guest.php';
     require_once __DIR__ . '/classes/RegisteredUser.php';
     require_once __DIR__ . '/classes/Card.php';
+    require_once __DIR__ . '/classes/Product.php';
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +17,8 @@
 
     <?php 
         
+        $productBasic = new Product("Best Cat", "Food", 22.99);
+
         $card1 = new Card("1111222233334444", "Guest", 10, 24, "545");
         $card2 = new Card("5555666677778888", "Pippo", 12, 26, "808");
 
@@ -24,6 +27,7 @@
 
         var_dump($guest);
         var_dump($pippo);
+        var_dump($productBasic);
     
     ?>
 
