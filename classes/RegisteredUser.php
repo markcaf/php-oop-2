@@ -8,10 +8,10 @@
         /**
          * Create a new instance of a RegisteredUser object
          * 
-         * @param [string] $_name
-         * @param [string] $_email
-         * @param [string] $_password
-         * @param [object] $_paymentCard
+         * @param string $_name
+         * @param string $_email
+         * @param string $_password
+         * @param object $_paymentCard
          */
         function __construct($_name, $_email, $_password, $_paymentCard){
             $this->name = $_name;

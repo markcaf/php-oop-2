@@ -1,6 +1,6 @@
 <?php 
 
-    /** The class RegisteredUser is the user who is registered and logged in*/
+    /** The class Card is the payment card of the user*/
     class Card {
         protected $cardNumber;
         protected $ownerName;
@@ -11,11 +11,11 @@
         /**
          * Create a new instance of a Payment Card object
          * 
-         * @param [string] $_cardNumber 'the number of the card, 16 chars'
-         * @param [string] $_ownerName name of the user to associate the card
-         * @param [int] $_expirationMonth the expiration month, choose from 1 to 12
-         * @param [int] $_expirationYear the expiration year, write the last two digits of the year
-         * @param [string] $_cvv the three-digit security code
+         * @param string $_cardNumber the number of the card, 16 chars
+         * @param string $_ownerName name of the user to associate the card
+         * @param int $_expirationMonth the expiration month, choose from 1 to 12
+         * @param int $_expirationYear the expiration year, write the last two digits of the year
+         * @param string $_cvv the three-digit security code
          */
         function __construct($_cardNumber, $_ownerName, $_expirationMonth, $_expirationYear, $_cvv){
             $this->cardNumber = $_cardNumber;

@@ -8,7 +8,7 @@
         /**
          * Create a new instance of a Guest object, default name is "Guest"
          * 
-         * @param [object] $_paymentCard
+         * @param object $_paymentCard
          */
         function __construct($_paymentCard){
             $this->name = "Guest";
